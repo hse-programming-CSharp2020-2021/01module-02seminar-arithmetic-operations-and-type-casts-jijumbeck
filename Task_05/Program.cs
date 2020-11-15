@@ -28,6 +28,8 @@
  */
 
 using System;
+using System.Globalization;
+using System.Threading;
 
 namespace Task_05 {
 	class Program {
@@ -35,22 +37,26 @@ namespace Task_05 {
 
 		static void Main(string[] args) {
 			// TODO : Сменить локаль на "ru-RU". 
+			Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
 
 			double a, b, c;
 			// TODO : Считать 3 стороны треугольника.
-
+			a = double.Parse(Console.ReadLine());
+			b = double.Parse(Console.ReadLine());
+			c = double.Parse(Console.ReadLine());
 
 			// TODO : Проверить неравенство треугольника и поместить в 
 			// результирующую строку notTriangleMessage 
-			// или площадь треугольника.
-			string result = ;
+			// или площадь треугольника..
+			string result = a + b > c && a + c > b && b + c > a ? $"{Sqare(a,b,c):f3}" : notTriangleMessage;
 
 			Console.WriteLine(result);
 		}
 
 		static double Sqare(double a, double b, double c) {
 			// TODO : Реализоать вычисление площади по формуле Герона. Ну или что-нибудь более извращённое 🙃.
-			return;
+			double pp = (a + b + c) / 2;
+			return Math.Sqrt(pp * (pp - a) * (pp - b) * (pp - c));
 		}
 	}
 }

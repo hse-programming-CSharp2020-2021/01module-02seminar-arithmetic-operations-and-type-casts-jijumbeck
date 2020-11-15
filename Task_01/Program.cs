@@ -25,11 +25,14 @@
  */
 
 using System;
+using System.Globalization;
+using System.Threading;
 
 namespace Task_01 {
 	class Program {
 		static void Main(string[] args) {
 			// TODO : Сменить локаль на "ru-RU". 
+			Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
 
 			double x;
 			// Ввод данных. 
@@ -42,10 +45,24 @@ namespace Task_01 {
 
 		static double Function(double x) {
 			// TODO : Реализовать вычисление функции F(x).
+			return 12 * myPow(x, 4) + 9 * myPow(x, 3) - 3 * myPow(x, 2) + 2 * x - 4;
 		}
 
 		static double myPow(double x, int pow) {
 			// TODO : Реализовать быстрое возведение в степень.
+			if (pow == 0)
+			{
+				return 1;
+			}
+			else if (pow % 2 == 0)
+			{
+				double g = myPow(x, pow / 2);
+				return g * g;
+			}
+			else
+			{
+				return x * myPow(x, pow - 1);
+			}
 		}
 	}
 }

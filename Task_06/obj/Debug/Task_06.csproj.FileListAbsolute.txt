@@ -1,0 +1,7 @@
+C:\Users\Sophia\source\repos\01module-02seminar-arithmetic-operations-and-type-casts-jijumbeck\Task_06\bin\Debug\Task_06.exe.config
+C:\Users\Sophia\source\repos\01module-02seminar-arithmetic-operations-and-type-casts-jijumbeck\Task_06\bin\Debug\Task_06.exe
+C:\Users\Sophia\source\repos\01module-02seminar-arithmetic-operations-and-type-casts-jijumbeck\Task_06\bin\Debug\Task_06.pdb
+C:\Users\Sophia\source\repos\01module-02seminar-arithmetic-operations-and-type-casts-jijumbeck\Task_06\obj\Debug\Task_06.csprojAssemblyReference.cache
+C:\Users\Sophia\source\repos\01module-02seminar-arithmetic-operations-and-type-casts-jijumbeck\Task_06\obj\Debug\Task_06.csproj.CoreCompileInputs.cache
+C:\Users\Sophia\source\repos\01module-02seminar-arithmetic-operations-and-type-casts-jijumbeck\Task_06\obj\Debug\Task_06.exe
+C:\Users\Sophia\source\repos\01module-02seminar-arithmetic-operations-and-type-casts-jijumbeck\Task_06\obj\Debug\Task_06.pdb

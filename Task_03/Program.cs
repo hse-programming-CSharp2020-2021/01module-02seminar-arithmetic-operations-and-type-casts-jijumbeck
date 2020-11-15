@@ -28,22 +28,29 @@
  */
 
 using System;
+using System.Globalization;
+using System.Threading;
 
 namespace Task_03 {
 	class Program {
 		const string complexRootsMessage = "complex roots";
 		static void Main(string[] args) {
 			// TODO : Сменить локаль на "ru-RU". 
+			Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
 
 			double a, b, c;
 			// TODO : Считать коэффициенты.
+			a = int.Parse(Console.ReadLine());
+			b = int.Parse(Console.ReadLine());
+			c = int.Parse(Console.ReadLine());
 
-			double discriminant = ;
+			double discriminant = b*b - 4*a*c;
 
 			// TODO : Проверить существование вещественных корней, если их нет, 
 			// записать в результирующую строку complexRootsMessage.
 			// А если корни есть, то записать их.
-			string result = ;
+			string result = discriminant < 0 ? complexRootsMessage : $"{((-1*b + Math.Sqrt(discriminant))/(2*a)):f2}" + Environment.NewLine +
+				$"{((-1 * b - Math.Sqrt(discriminant)) / (2 * a)):f2}";
 
 
 			Console.WriteLine(result);
